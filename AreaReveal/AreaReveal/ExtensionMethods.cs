@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace AreaReveal
 {
-    class Main
+    public static class ExtensionMethods
     {
-        static void Main()
+        public static IEnumerable<T> ToIEnumarable<T>(this T item)
         {
+            yield return item;
         }
     }
 }

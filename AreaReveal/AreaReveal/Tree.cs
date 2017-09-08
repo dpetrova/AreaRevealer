@@ -18,7 +18,7 @@ namespace AreaReveal
 
         /// <summary>Constructs the tree</summary>
         /// <param name="root">the position of the root node</param>
-        public Tree(Position root)
+        public Tree(Vector2 root)
         {
             if (root == null)
             {
@@ -31,7 +31,7 @@ namespace AreaReveal
         /// <summary>Constructs the tree</summary>
         /// <param name="root">the position of the root node</param>
         /// <param name="children">the children of the root node</param>
-        public Tree(Position root, params Tree[] children)
+        public Tree(Vector2 root, params Tree[] children)
             : this(root)
         {
             foreach (Tree child in children)

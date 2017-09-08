@@ -2,12 +2,12 @@
 
 namespace AreaReveal
 {
-    public class Position
+    public class Vector2
     {
         private float x;
         private float y;        
 
-        public Position(float xCoord, float yCoord)
+        public Vector2(float xCoord, float yCoord)
         {
             this.X = xCoord;
             this.Y = yCoord;            
